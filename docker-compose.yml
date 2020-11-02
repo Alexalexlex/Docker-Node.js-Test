@@ -6,6 +6,6 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - ./:/usr/src/app
+      - ./:/testvol
     ports:
       - "8080:8080"

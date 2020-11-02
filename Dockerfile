@@ -1,8 +1,7 @@
 FROM node:14.5.0
-
+RUN mkdir testvol
 # Create app directory
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+WORKDIR ./testvol
 
 # Install dependencies
 COPY package*.json ./
